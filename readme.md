@@ -10,5 +10,7 @@
 5. 评论系统    使用的多说评论系统，很好用
 
 ##关于博主
-
 博主是南京某渣工科计算机学院学生，一直以来就有搭建个人博客的想法。最近在学习python，所以用了python最火的web框架django来搭建，参考的资料是gitbook上的django blog电子书。
+
+##网站链接
+www.lelouch.com.cn

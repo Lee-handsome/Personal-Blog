@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load custom_markdown %}
+
+{% block content %}
+<!--
+<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shCore.js"></script>       
+<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+
+<link href="/static/syntaxhighlighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<link href="/static/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+-->
+<div id="postmain">
+<div class="posts">
+        <section class="post">
+            <header class="post-header">
+                <h2 id="posttitle" class="post-title">{{ post.title }}</h2>
+
+                    <p class="post-meta">
+                        Time:  <a class="post-author" >{{ post.date_time|date:"Y /m /d"}}</a> <a class="post-category post-category-js" >{{ post.category }}</a>
+                    </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ post.content|custom_markdown}}
+                    </p>
+                </div>
+        </section>
+        {% include "duoshuo.html" %}
+</div>
+</div>
+<!--
+<script type="text/javascript">
+ SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+    SyntaxHighlighter.all();
+</script>
+-->
+{% endblock %}

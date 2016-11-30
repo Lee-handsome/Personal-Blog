@@ -1,0 +1,94 @@
+#blog_title{
+    color:#0099FF;
+}
+#posttitle{
+    color:#666666;
+}
+#button{
+    background: rgb(66, 184, 221);
+    text-decoration: none;
+}
+
+#copyright{
+    color:#999;
+    text-align: center;
+    font-size: 15px;
+}
+#footerlink{
+    font-size: 25px;
+    background-color: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 20px #222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#header{
+    position: relative;
+}
+#headimage{
+    border: 0px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    /*margin-left: 115px;
+    margin:auto;
+    margin-bottom: 20px;*/
+    margin-top:-40px;
+}
+.button{
+    background: rgb(66, 184, 221);
+}
+#head{
+    background-color: rgb(34, 34, 34);
+}
+body{
+    background-image: url("/static/images/bg.jpg");
+}
+#main{
+    background-color: #FFF;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 20px #222;
+    margin-top: 20px;
+}
+#postmain{
+    background-color: #FFF;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 20px #222;
+    margin-top: 20px;
+}
+#addpost{
+    background-color: #FFF;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 20px #222;
+    margin-top: 20px;
+}
+#nextpage{
+    background-color: #FFF;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 20px #222;
+    margin-top: 20px;
+}
+#nextpage{
+    padding-bottom: 10px;
+}

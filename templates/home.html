@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load custom_markdown %}
+
+{% block content %}
+<div class="posts">
+    {% for post in post_list %}
+    <div>
+        <section class="post" id="main" >
+            <header class="post-header">
+                <h2 id="posttitle" class="post-title">{{ post.title }}</h2>
+
+                    <p class="post-meta">
+                        Time:  <a class="post-author">{{ post.date_time|date:"Y /m /d"}}</a> <a class="post-category post-category-js" >{{ post.category }}</a>
+                    </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                      {{ post.content|custom_markdown|truncatewords_html:20 }}
+                    </p>
+                </div>
+                <a id="button" class="pure-button pure-button-primary" href="{% url "detail" id=post.id %}">Read More</a>
+        </section>
+    </div>
+    {% endfor %}
+
+        {% if post_list  and current_page.paginator.num_pages > 1 %}
+
+        <div id="nextpage" class="pure-menu pure-menu-horizontal pure-menu-open">
+
+            <ul class="post">
+            {% if current_page.has_previous %}
+            <li id="preview"><a href="?page={{ current_page.previous_page_number}}" 
+            style="text-decoration: none;">上一页</a></li>
+            {% endif %}
+            <li id="pagenum" style="color:rgb(119, 119, 119);">{{current_page}}</li>
+            {% if current_page.has_next %}                                                        
+            <li id="next" ><a href="?page={{ current_page.next_page_number}}" style="text-decoration: none;">下一页</a></li>
+
+            {% endif %}
+             </ul>
+        </div>                                                                             
+    {% endif %}  
+</div>
+{% endblock %}

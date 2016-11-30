@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Welcome To My Blog</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4" id="head">
+        <div class="header" >
+        <center>
+            <div id="headimage">
+            <img src="/static/images/1.jpg"/>
+            </div>
+            <a href="http://www.lelouch.com.cn/"> <h1 id="blog_title"class="brand-title">Lijun Blog</h1> </a>
+            <h2 class="brand-tagline">既然选择了远方，<br/>便只顾风雨兼程</h2>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://github.com/Lee-Handsome">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="https://leetcode.com/lee-handsome/">Leetcode</a>
+                    </li>
+                </ul>
+            </nav>
+        </center>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            {% block content %}
+            {% endblock %}
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open" id="footerlink">
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="https://leetcode.com/lee-handsome/">LeetCode</a></li>
+                        <li><a href="https://github.com/Lee-Handsome">GitHub</a></li>
+                    </ul>
+                    <p id="copyright">Copyright 2016 Power by Django and Pure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
